@@ -9,8 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''npm set registry https://registry.npmjs.org &&
-npm install'''
+        sh 'npm set registry https://registry.npmjs.org'
+        sh 'npm install'
       }
     }
 
